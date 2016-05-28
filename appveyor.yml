@@ -19,4 +19,4 @@ build:
   verbosity: minimal
 
 after_test:
-  - ps: .\nuget\pack.ps1
+  - nuget pack
