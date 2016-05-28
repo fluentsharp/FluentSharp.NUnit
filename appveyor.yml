@@ -8,5 +8,5 @@ before_build:
   - nuget restore
 
 build:
-  #project: FluentSharp.NUnit.sln
+  project: FluentSharp.NUnit.sln
   verbosity: minimal
