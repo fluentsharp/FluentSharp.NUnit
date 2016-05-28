@@ -61,12 +61,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FluentSharp.CoreLib\FluentSharp.CoreLib.csproj">
-      <Project>{0A7CE0E0-B092-43B5-AB80-99BA909019C9}</Project>
-      <Name>FluentSharp.CoreLib</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="FluentSharp.NUnit.nuspec">
       <SubType>Designer</SubType>
     </None>
@@ -75,6 +69,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UnitTests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\lib\FluentSharp.CoreLib\src\FluentSharp.CoreLib.csproj">
+      <Project>{0a7ce0e0-b092-43b5-ab80-99ba909019c9}</Project>
+      <Name>FluentSharp.CoreLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
