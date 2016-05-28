@@ -1,5 +1,12 @@
 version: 6.0.1.{build}
 
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: "{version}"
+  assembly_file_version: "{version}"
+  assembly_informational_version: "{version}"
+
 install:
   - cmd: sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   - cmd: git submodule -q update --init            
@@ -10,3 +17,6 @@ before_build:
 build:
   project: FluentSharp.NUnit.sln
   verbosity: minimal
+
+after_test:
+  - ps: .\nuget\pack.ps1
