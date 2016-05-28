@@ -19,4 +19,4 @@ build:
   verbosity: minimal
 
 after_test:
-  - nuget pack FluentSharp.NUnit/FluentSharp.NUnit.nuspec
+  - nuget pack src/FluentSharp.NUnit.nuspec
