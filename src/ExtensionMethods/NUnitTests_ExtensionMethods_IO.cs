@@ -85,7 +85,7 @@ namespace FluentSharp.NUnit
         }
         public static string        assert_File_Parent_Folder_Is(this string filePath, string folder, string message = NUnit_Messages.ASSERT_FILE_PARENT_FOLDER_IS)
         {
-            filePath.parentFolder().assert_Equal(folder, message);
+            filePath.parent_Folder().assert_Equal(folder, message);
             return filePath;
         }
         
@@ -186,7 +186,7 @@ namespace FluentSharp.NUnit
         }
         public static string assert_Parent_Folder_Is(this string folderPath, string folder, string message = NUnit_Messages.ASSERT_PARENT_FOLDER_IS)
         {
-            folderPath.parentFolder().assert_Equal(folder, message);
+            folderPath.parent_Folder().assert_Equal(folder, message);
             return folderPath;
         }        
         public static string assert_Is_Folder(this string folderPath)
