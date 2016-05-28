@@ -4,6 +4,9 @@ install:
   - cmd: sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   - cmd: git submodule -q update --init            
 
+before_build:
+  - nuget restore
+
 build:
-  project: FluentSharp.NUnit.sln
+  #project: FluentSharp.NUnit.sln
   verbosity: minimal
