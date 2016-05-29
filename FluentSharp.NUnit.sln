@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentSharp.CoreLib", "lib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentSharp.NUnit.Test", "test\FluentSharp.NUnit.Test.csproj", "{BE90F3A0-7B75-4BCA-9577-C9730A650A66}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{81A7E80C-1C45-4184-BAA6-B4CA44E18C68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F9A7909D-5A0B-44F7-84BB-0154C2729C02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{B8EC59B7-E2DE-4010-B2E2-935F8EB2410A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +36,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DA6B6B3-5BE3-4610-BB7B-EA9A4BAF27AF} = {81A7E80C-1C45-4184-BAA6-B4CA44E18C68}
+		{0A7CE0E0-B092-43B5-AB80-99BA909019C9} = {B8EC59B7-E2DE-4010-B2E2-935F8EB2410A}
+		{BE90F3A0-7B75-4BCA-9577-C9730A650A66} = {F9A7909D-5A0B-44F7-84BB-0154C2729C02}
 	EndGlobalSection
 EndGlobal
